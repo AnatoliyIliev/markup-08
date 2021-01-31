@@ -1,0 +1,51 @@
+/* Our qualities -----------------------------------*/
+
+.our__qualities {
+  padding-top: 94px;
+}
+
+.our__item-text {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.our__item-description {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.our__qualities-flex {
+  // display: flex;
+  justify-content: space-between;
+}
+
+.our__qualities-flex .our__item {
+  width: 270px;
+}
+
+.our__qualities-flex .our__item:not(:last-child),
+.team__foto .team__foto-center:not(:last-child),
+.affair-decorate:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our__item {
+  color: #000000;
+}
+
+.our__item-icon {
+  // display: inline-flex;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}

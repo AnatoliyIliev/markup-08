@@ -1,0 +1,51 @@
+/* Clients ----------------------------*/
+
+.clients {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  color: $primeri-text-color;
+}
+
+.clients-heading {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  // text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+// .clients__center {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.clients__icon {
+  // display: inline-flex;
+  width: 170px;
+  height: 90px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border $cubic-bezier, fill $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border: solid 1px $accent-color;
+  }
+}
+
+.clients__icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__icon-marg {
+  margin: auto;
+}

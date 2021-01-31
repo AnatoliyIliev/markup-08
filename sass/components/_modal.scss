@@ -1,0 +1,241 @@
+/* MODAL--------------------*/
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  // position: fixed;
+  // width: 1600px;
+  // height: 1024px;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  // transform: translate(-50%, -50%);
+
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: opacity $cubic-bezier;
+}
+
+.modal {
+  position: absolute;
+  // top: 50%;
+  // left: 50%;
+
+  // width: 528px;
+  // height: 581px;
+  background-color: $accent-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  // transform: translate(-50%, -50%);
+}
+
+.modal__button-close {
+  // display: block;
+  position: absolute;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  background: $accent-white;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: $primeri-text-color;
+  transition: fill $cubic-bezier;
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.modal__icon-close {
+  position: absolute;
+  // display: flex;
+  width: 100%;
+  height: 100%;
+  top: 9px;
+  left: 9px;
+  cursor: pointer;
+}
+
+.modal__text {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  // text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 40px;
+  padding-bottom: 0;
+  color: $primeri-text-color;
+}
+
+.form {
+  padding: 12px 40px;
+  padding-bottom: 0;
+}
+
+.label-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $title-text-color;
+  padding-bottom: 4px;
+}
+
+.label {
+  position: relative;
+  // display: flex;
+  // flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.label input {
+  position: relative;
+  width: 100%;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border $cubic-bezier;
+}
+
+.icon-form {
+  position: absolute;
+  // display: inline-flex;
+  background-size: contain;
+  bottom: 13px;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill $cubic-bezier;
+}
+
+.label input:focus {
+  outline: none;
+  border: 1px solid $accent-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.label:focus-within .icon-form {
+  fill: $accent-color;
+}
+
+.comment {
+  width: 448px;
+  height: 138px;
+  padding-bottom: 0;
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}
+
+.comment {
+  resize: none;
+  height: 120px;
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.chec-label {
+  // display: inline-flex;
+  // align-items: center;
+  margin-top: 20px;
+  width: 423px;
+}
+
+.chec-tex {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+
+.check-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: $accent-color;
+}
+
+.checkbox {
+  /* appearance: none; */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.icon-checkbox {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+}
+
+.icon-checkbox::before {
+  // display: inline-block;
+  width: 16px;
+  height: 15px;
+  content: '';
+  border: 2px solid $primeri-text-color;
+  border-radius: 2px;
+  transition: transform 250ms linear;
+}
+
+.checkbox:checked + .icon-checkbox::before {
+  background-image: url(../images/Vector.svg);
+  background-origin: border-box;
+  background-position: center;
+  background-size: contain;
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  border: transparent;
+}
+
+.form-button {
+  width: 200px;
+  height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  // align-items: center;
+  // text-align: center;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  color: $accent-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-top: 30px;
+}
