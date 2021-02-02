@@ -2,53 +2,78 @@
 
 .hero {
   background: #2f303a;
-  /* outline: 2px solid tomato; */
-}
+  @media screen and (min-width: 480px) {
+  }
 
-.hero {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  // text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/header-fone.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    // text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-fone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  // width: 696px;
-  // align-items: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: $accent-white;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    // width: 696px;
+    // align-items: center;
+
+    // padding: 0px;
+    // margin-top: 0px;
+    // margin-bottom: 30px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
 }
 
 .hero__button {
-  // display: inline-block;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  background-color: $accent-color;
-  color: $accent-white;
   min-width: 200px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  background-color: $accent-color;
+  color: $accent-white;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    // display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+  }
 }
