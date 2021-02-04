@@ -1,26 +1,45 @@
 /* Affair ------------------------------------*/
 
-.affair-heading,
-.team-heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
-  // text-align: center;
+.affair {
+  display: none;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.affair-heading {
+  text-align: center;
   letter-spacing: 0.03em;
   color: $primeri-text-color;
   margin-top: 0px;
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primeri-text-color;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
 }
 
-// .affair-foto,
-// .team__foto {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-.affair {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.affair-foto,
+.team__foto {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .affair-decorate {
@@ -28,25 +47,29 @@
 }
 
 .affair-block {
-  // display: flex;
-  width: 370px;
-  height: 70px;
-  // align-items: center;
-  // justify-content: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgba(47, 48, 58, 0.8);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 370px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .affair-text {
-  margin: 0;
-  padding: 0;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    padding: 0;
 
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $accent-white;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $accent-white;
+  }
 }

@@ -1,39 +1,54 @@
 /* Clients ----------------------------*/
 
 .clients {
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: $primeri-text-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-heading {
   font-family: $font-family;
   font-style: $font-style;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
-  // text-align: center;
+  text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
-  padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+
+    margin-bottom: 50px;
+  }
 }
 
-// .clients__center {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.clients__center {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .clients__icon {
-  // display: inline-flex;
+  display: inline-flex;
   width: 170px;
   height: 90px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border $cubic-bezier, fill $cubic-bezier;
+
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:focus {
@@ -42,10 +57,6 @@
   }
 }
 
-.clients__icon:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients__icon-marg {
-  margin: auto;
-}
+// .clients__icon:not(:last-child) {
+//   margin-right: 30px;
+// }

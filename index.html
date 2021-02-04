@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
-<body class="container">
-    <header class="page__heater">
-        <div  class="main-nav">            
-            <nav class="page__heater-space">
-                <a href="./" class="page__heater-logo">Web<span class="logo__colour">Studio</span></a>
+<body>
+    <header class="page__header">
+        <div  class="main-nav container">            
+            <nav class="page__header-space">
+                <a href="./" class="page__header-logo">Web<span class="logo__colour">Studio</span></a>
                 <ul class="site-nav">
-                    <li class="item"><a href="./index.html" class="page__heater-nav current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="page__heater-nav">Портфолио</a></li>
-                    <li class="item"><a href="" class="page__heater-nav">Контакты</a></li>
+                    <li class="item"><a href="./index.html" class="page__header-nav current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="page__header-nav">Портфолио</a></li>
+                    <li class="item"><a href="" class="page__header-nav">Контакты</a></li>
                 </ul>
             </nav>
-            <address class="page__heater-address">
+            <address class="page__header-address">
                 <ul class="auth-nav">                 
                     <li class="item">
-                        <a href="mailto:info@devstudio.com" class="page__heater-nav nav-mailo">
+                        <a href="mailto:info@devstudio.com" class="page__header-nav nav-mailo">
                             <svg class="icon-mail" width="16" height="12">
                                 <use href="./images/symbol-defs.svg#mail"></use>
                             </svg>                            
@@ -33,7 +33,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="tel:+380961111111" class="page__heater-nav nav-tel">
+                        <a href="tel:+380961111111" class="page__header-nav nav-tel">
                             <svg class="icon-tel"  width="10" height="16">
                                 <use href="./images/symbol-defs.svg#smartphone"></use>
                             </svg>                            
@@ -46,9 +46,11 @@
     </header>
     <main>
         <!--Hero-->
-        <section class="hero">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button data-modal-open class="hero__button">Заказать услугу</button> 
+        <section>
+            <div class="hero container">
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <button data-modal-open class="hero__button">Заказать услугу</button> 
+            </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal"> 
                     <span class="modal__button-close" data-modal-close>
@@ -97,7 +99,7 @@
             </div>           
         </section>
         <!--<h2>Наши качества</h2>-->
-        <section class="our__qualities">        
+        <section class="our__qualities container">        
             <ul class="our__qualities-flex">            
                 <li class="our__item">
                     <div class="our__item-icon">
@@ -138,7 +140,7 @@
             </ul>
         </section>
         <!--Чем мы занимаемся-->
-        <section class="affair">
+        <section class="affair container">
             <h2 class="affair-heading">Чем мы занимаемся</h2>
             <ul class="affair-foto">
                 <li class="affair-decorate">
@@ -162,7 +164,7 @@
             </ul>        
         </section>
         <!--Наша команда-->
-        <section class="team">
+        <section class="team container">
             <h2 class="team-heading">Наша команда</h2>
             <div>
                 <ul class="team__foto">
@@ -286,7 +288,7 @@
             </div>
         </section>
         <!--Наши клиенты-->
-        <section class="clients">
+        <section class="clients container">
             <h2 class="clients-heading">Постоянные клиенты</h2>
             <ul class="clients__center">
                 <li>
@@ -336,7 +338,7 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-        <div class="footer__center">
+        <div class="footer__center container">
             <div>
                 <!--<h2>Contacts</h2>--> 
                 <a href="/" class="footer__logo">Web<span class="footer__logo-colour">Studio</span></a>
