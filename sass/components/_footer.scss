@@ -4,14 +4,18 @@
   background: #2f303a;
 }
 
+.footer__nav {
+  text-align: center;
+}
+
 .footer__logo-colour {
   color: $accent-white;
 }
 
-.footer .footer__logo {
-  // display: flex;
-  margin-bottom: 0px;
-}
+// .footer .footer__logo {
+//   display: flex;
+//   margin-bottom: 0px;
+// }
 
 .footer__logo {
   color: $accent-color;
@@ -68,39 +72,52 @@
 }
 
 .footer__com {
-  // display: inline-flex;
-
-  width: 206px;
-  margin: 0;
-  padding: 0;
-  // flex-wrap: wrap;
-  margin-left: 70px;
+  text-align: center;
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 206px;
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+  }
 }
 
-// .footer__center {
-//   display: flex;
-//   align-items: baseline;
-// }
+.footer__center {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .teme {
   background: rgba(255, 255, 255, 0.1);
 }
 
 .footer__pole {
-  // display: inline-flex;
-  // flex-wrap: wrap;
-  width: 570px;
-  margin: 0;
-  margin-left: 93px;
-  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 570px;
+    margin: 0;
+    margin-left: 93px;
+    padding: 0;
+  }
 }
 
 .footer__label {
-  // display: inline-flex;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .footer__label-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   padding-top: 12px;
@@ -109,6 +126,9 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer__label-input {
@@ -124,22 +144,25 @@
 
 .footer__button {
   position: relative;
-  // display: inline-flex;
-  // align-items: center;
-  // text-align: center;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
   width: 200px;
   height: 50px;
   margin: 0;
   padding: 0;
-  margin-left: 12px;
+  margin-top: 20px;
   background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .footer__button-text {
-  // display: inline-flex;
-  // align-items: center;
+  display: inline-flex;
+  align-items: center;
   letter-spacing: 0.06em;
 
   margin: 10px 29px;
