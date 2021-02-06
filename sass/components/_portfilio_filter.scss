@@ -1,9 +1,14 @@
-.page__heater {
+.main-nav {
   border-bottom: 1px solid #ececec;
 }
 
 .portholio {
   margin-top: 25px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +48,10 @@
 .portholio-foto {
   margin-bottom: 30px;
   background-color: $accent-white;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
   }
@@ -102,6 +111,9 @@
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform $cubic-bezier;
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding: 63px 24px;

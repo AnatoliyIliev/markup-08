@@ -13,11 +13,17 @@
   margin-bottom: 15px;
 }
 
-// .button-but {
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 34px;
-// }
+.button-but {
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 34px;
+  }
+}
 
 // .button-but .button-li:not(:last-child) {
 //   margin-right: 8px;
@@ -34,6 +40,7 @@
   border-radius: 4px;
   cursor: pointer;
   border: 1px solid transparent;
+  border-color: transparent;
   transition: color $cubic-bezier, background-color $cubic-bezier,
     box-shadow $cubic-bezier;
 
