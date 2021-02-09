@@ -12,6 +12,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -53,22 +54,14 @@
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 30px;
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
   }
 }
-
-// .portholio-foto:nth-child(3n) {
-//   margin-right: 0px;
-// }
-
-// .portholio-foto:nth-last-child(-n + 3) {
-//   margin-bottom: 0px;
-// }
 
 .portholio-block {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-  // border-top: 0;
   width: 100%;
 
   @media screen and (min-width: 1200px) {
@@ -77,7 +70,6 @@
 }
 
 .how {
-  // display: block;
   box-shadow: 0px 1px 1px rgb(255, 255, 255), 0px 4px 4px rgb(255, 255, 255),
     1px 4px 6px rgb(255, 255, 255);
 }

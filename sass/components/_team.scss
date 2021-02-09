@@ -1,8 +1,17 @@
 /* Team ---------------------------------*/
-
 .team {
   background: #f5f4fa;
   text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .team__foto-name {
@@ -13,16 +22,6 @@
   text-align: center;
   margin-top: 0px;
   margin-bottom: 10px;
-}
-
-.team {
-  padding-bottom: 60px;
-  padding-top: 60px;
-
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
 }
 
 .team-heading {
@@ -38,7 +37,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.67;
-
     margin-bottom: 50px;
   }
 }
@@ -66,11 +64,18 @@
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin: 15px;
+  }
 }
 .team__foto {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .team__foto-padding {
