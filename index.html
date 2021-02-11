@@ -145,10 +145,15 @@
             <ul class="affair-foto">
                 <li class="affair-decorate">
                     <picture>
-                        <source srcset="./images/comp@2x-webp.webp" type="image/webp">
+                        <source srcset="
+                        ./images/comp@1x-370.webp 370w, 
+                        ./images/comp@2x-370.webp 740w" 
+                        type="image/webp">
                         <img 
-                            srcset="./images/comp@1x.jpg 1x, ./images/comp@2x.jpg 2x"                         
-                            src="./images/comp@1x.jpg" 
+                            srcset="
+                            ./images/comp@1x-370.jpg 1x, 
+                            ./images/comp@2x-370.jpg 2x"                         
+                            src="./images/comp@1x-370.jpg" 
                             alt="Comp" 
                             width="370">
                     </picture>        
@@ -158,26 +163,36 @@
                 </li>
                 <li class="affair-decorate">
                     <picture>
-                        <source srcset="./images/tel@2x-webp.webp" type="image/webp">
+                        <source srcset="
+                        ./images/tel@1x-370.webp 370w, 
+                        ./images/tel@2x-370.webp 740w" 
+                        type="image/webp">
                         <img 
-                            srcset="./images/tel@1x.jpg 1x, ./images/tel@2x.jpg 2x"                         
-                            src="./images/tel@1x.jpg" 
+                            srcset="
+                            ./images/tel@1x-370.jpg 1x, 
+                            ./images/tel@2x-370.jpg 2x"                         
+                            src="./images/tel@1x-370.jpg" 
                             alt="Tel" 
                             width="370">
-                    </picture> 
+                    </picture>
                     <div class="affair-block">
                         <p class="affair-text">Мобильные приложения</p>
                     </div>                
                 </li>
                 <li class="affair-decorate">
                     <picture>
-                        <source srcset="./images/planshet@2x-webp.webp" type="image/webp">
+                        <source srcset="
+                        ./images/planshet@1x-370.webp 370w, 
+                        ./images/planshet@2x-370.webp 740w" 
+                        type="image/webp">
                         <img 
-                            srcset="./images/planshet@1x.jpg 1x, ./images/planshet@2x.jpg 2x"                         
-                            src="./images/planshet@1x.jpg" 
+                            srcset="
+                            ./images/planshet@1x-370.jpg 1x, 
+                            ./images/planshet@2x-370.jpg 2x"                         
+                            src="./images/planshet@1x-370.jpg" 
                             alt="Planshet" 
                             width="370">
-                    </picture> 
+                    </picture>
                     <div class="affair-block">
                         <p class="affair-text">Дизайнерские решения</p>
                     </div>               
@@ -185,19 +200,43 @@
             </ul>        
         </section>
         <!--Наша команда-->
-        <section class="team">
+        <section class="team container">
             <h2 class="team-heading">Наша команда</h2>
             <div>
                 <ul class="team__foto">
                     <li class="team__foto-center">
+                        <div>
                         <picture>
-                            <source srcset="./images/Igor@2x-webp.webp" type="image/webp">
+                            <source 
+                                srcset="
+                                    ./images/igor@1x-270.webp 270w, 
+                                    ./images/igor@2x-270.webp 540w,
+                                    ./images/igor@1x-354.webp 354w, 
+                                    ./images/igor@2x-354.webp 708w,
+                                    ./images/igor@1x-450.webp 450w, 
+                                    ./images/igor@2x-450.webp 900w
+                                " 
+                                type="image/webp"
+                            >
                             <img 
-                                srcset="./images/Igor@1x.jpg 1x, ./images/Igor@2x.jpg 2x"                         
-                                src="./images/Igor@1.jpg" 
-                                alt="Игорь Демьяненко" 
-                                width="270">
-                        </picture> 
+                                srcset="                            
+                                    ./images/igor@1x-270.jpg 270w, 
+                                    ./images/igor@2x-270.jpg 540w,
+                                    ./images/igor@1x-354.jpg 354w, 
+                                    ./images/igor@2x-354.jpg 708w,
+                                    ./images/igor@1x-450.jpg 450w, 
+                                    ./images/igor@2x-450.jpg 900w
+                                "                          
+                                src="./images/igor@1x-270.jpg" 
+                                alt="Игорь Демьяненко"              
+                                sizes="
+                                    (min-width: 1200px) 15vw, 
+                                    (min-width: 768px) 25vw, 
+                                    (min-width: 480px) 75vw, 
+                                    100vw
+                                "                            
+                            >                         
+                        </picture>
                         <div class="team__foto-padding">
                             <h3 class="team__foto-name">Игорь Демьяненко</h3>
                             <p class="team__foto-skill">Product Designer</p>                        
@@ -227,12 +266,31 @@
                     </li>
                     <li class="team__foto-center">
                         <picture>
-                            <source srcset="./images/Olga@2x-webp.webp" type="image/webp">
-                            <img 
-                                srcset="./images/Olga@1x.jpg 1x, ./images/Olga@2x.jpg 2x"                         
-                                src="./images/Olga@1x.jpg" 
-                                alt="Ольга Репина" 
-                                width="270">
+                            <source srcset="
+                                ./images/olga@1x-270.webp 270w, 
+                                ./images/olga@2x-270.webp 540w,
+                                ./images/olga@1x-354.webp 354w, 
+                                ./images/olga@2x-354.webp 708w,
+                                ./images/olga@1x-450.webp 450w, 
+                                ./images/olga@2x-450.webp 900w" 
+                                type="image/webp"
+                            >
+                           <img 
+                                srcset="                            
+                                ./images/olga@1x-270.jpg 270w, 
+                                ./images/olga@2x-270.jpg 540w,
+                                ./images/olga@1x-354.jpg 354w, 
+                                ./images/olga@2x-354.jpg 708w,
+                                ./images/olga@1x-450.jpg 450w, 
+                                ./images/olga@2x-450.jpg 900w"                          
+                                src="./images/olga@1x-270.jpg" 
+                                alt="Ольга Репина"   
+                                sizes="
+                                (min-width: 1200px) 15vw, 
+                                (min-width: 768px) 25vw, 
+                                (min-width: 480px) 50vw,
+                                100vw"
+                            >
                         </picture>
                         <div class="team__foto-padding">
                             <h3 class="team__foto-name">Ольга Репина</h3>
@@ -263,12 +321,35 @@
                     </li>
                     <li class="team__foto-center">
                         <picture>
-                            <source srcset="./images/Nicolay@2x-webp.webp" type="image/webp">
+                            <source 
+                                srcset="
+                                    ./images/nikolay@1x-270.webp 270w, 
+                                    ./images/nikolay@2x-270.webp 540w,
+                                    ./images/nikolay@1x-354.webp 354w, 
+                                    ./images/nikolay@2x-354.webp 708w,
+                                    ./images/nikolay@1x-450.webp 450w, 
+                                    ./images/nikolay@2x-450.webp 900w
+                                " 
+                                type="image/webp"
+                            >
                             <img 
-                                srcset="./images/Nicolay@1x.jpg 1x, ./images/Nicolay@2x.jpg 2x"                         
-                                src="./images/Nicolay@1x.jpg" 
-                                alt="Николай Тарасов" 
-                                width="270">
+                                srcset="                            
+                                    ./images/nikolay@1x-270.jpg 270w, 
+                                    ./images/nikolay@2x-270.jpg 540w,
+                                    ./images/nikolay@1x-354.jpg 354w, 
+                                    ./images/nikolay@2x-354.jpg 708w,
+                                    ./images/nikolay@1x-450.jpg 450w, 
+                                    ./images/nikolay@2x-450.jpg 900w
+                                "                          
+                                src="./images/nikolay@1x-270.jpg" 
+                                alt="Николай Тарасов"              
+                                sizes="
+                                    (min-width: 1200px) 15vw, 
+                                    (min-width: 768px) 25vw, 
+                                    (min-width: 480px) 75vw, 
+                                    100vw
+                                "                            
+                            >                          
                         </picture>
                         <div class="team__foto-padding">
                             <h3 class="team__foto-name">Николай Тарасов</h3>
@@ -299,11 +380,35 @@
                     </li>
                     <li class="team__foto-center">
                         <picture>
-                            <source srcset="./images/Misha@2x-webp.webp" type="image/webp">
+                            <source 
+                                srcset="
+                                    ./images/misha@1x-270.webp 270w, 
+                                    ./images/misha@2x-270.webp 540w,
+                                    ./images/misha@1x-354.webp 354w, 
+                                    ./images/misha@2x-354.webp 708w,
+                                    ./images/misha@1x-450.webp 450w, 
+                                    ./images/misha@2x-450.webp 900w
+                                " 
+                                type="image/webp"
+                            >
                             <img 
-                                srcset="./images/Misha@1x.jpg 450w, ./images/Misha@2x.jpg 2x"                         
-                                src="./images/Misha@1x.jpg" 
-                                alt="Михаил Ермаков">
+                                srcset="                            
+                                    ./images/misha@1x-270.jpg 270w, 
+                                    ./images/misha@2x-270.jpg 540w,
+                                    ./images/misha@1x-354.jpg 354w, 
+                                    ./images/misha@2x-354.jpg 708w,
+                                    ./images/misha@1x-450.jpg 450w, 
+                                    ./images/misha@2x-450.jpg 900w
+                                "                          
+                                src="./images/misha@1x-270.jpg" 
+                                alt="Михаил Ермаков"              
+                                sizes="
+                                    (min-width: 1200px) 15vw, 
+                                    (min-width: 768px) 25vw, 
+                                    (min-width: 480px) 75vw, 
+                                    100vw
+                                "                            
+                            >                          
                         </picture>
                         <div class="team__foto-padding">
                             <h3 class="team__foto-name">Михаил Ермаков</h3>
