@@ -36,3 +36,9 @@ body {
   font-style: $font-style;
   font-weight: 400;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

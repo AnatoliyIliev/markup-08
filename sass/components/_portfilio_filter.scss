@@ -49,6 +49,8 @@
 .portholio-foto {
   margin-bottom: 30px;
   background-color: $accent-white;
+  width: calc((100% - 2 * 15px) /);
+  margin: 15px;
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
