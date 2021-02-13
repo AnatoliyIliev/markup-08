@@ -42,6 +42,12 @@
                     </li>                    
                 </ul>                
             </address>
+            <button type="button" class="menu-button" aria-label="Переключатель мобильного меню">
+                <svg width='40' height='40'>
+                    <use class="icon-menu" href='./images/symbol-defs.svg#icon-menu_40px'></use>
+                    <use class="icon-close" href='./images/symbol-defs.svg#icon-close_40px'></use>
+                </svg>  
+            </button>
         </div>
     </header>
     <main>
@@ -200,9 +206,9 @@
             </ul>        
         </section>
         <!--Наша команда-->
-        <section class="team container">
+        <section class="team">
             <h2 class="team-heading">Наша команда</h2>
-            <div>
+            <div class="container">
                 <ul class="team__foto">                    
                     <li class="team__foto-center">                    
                         <picture>
@@ -435,57 +441,59 @@
             </div>
         </section>
         <!--Наши клиенты-->
-        <section class="clients container">
-            <h2 class="clients-heading">Постоянные клиенты</h2>
-            <ul class="clients__center">
-                <li class="clients__wrap">
-                    <a href="#" class="clients__icon">
-                        <svg class="clients__icon-marg" width="45" height="49">
-                            <use href="./images/symbol-defs.svg#logo_1"></use>
-                        </svg> 
-                    </a>
-                </li>
-                <li class="clients__wrap">
-                    <a href="#" class="clients__icon">
-                        <svg class="clients__icon-marg" width="40" height="52">
-                            <use href="./images/symbol-defs.svg#logo_2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients__wrap">
-                    <a href="#" class="clients__icon">
-                        <svg class="clients__icon-marg" width="41" height="43">
-                            <use href="./images/symbol-defs.svg#logo_3"></use>
-                        </svg> 
-                    </a> 
-                </li>
-                <li class="clients__wrap">
-                    <a href="#" class="clients__icon">
-                        <svg class="clients__icon-marg" width="80" height="42">
-                            <use href="./images/symbol-defs.svg#logo_4"></use>
-                        </svg> 
-                    </a>  
-                </li>
-                <li class="clients__wrap">
-                    <a href="#" class="clients__icon">
-                        <svg class="clients__icon-marg" width="59" height="47">
-                            <use href="./images/symbol-defs.svg#logo_5"></use>
-                        </svg>
-                    </a>   
-                </li>
-                <li class="clients__wrap">
-                    <a href="#" class="clients__icon">
-                        <svg class="clients__icon-marg" width="89" height="46">
-                            <use href="./images/symbol-defs.svg#logo_6"></use>
-                        </svg>
-                    </a> 
-                </li>
-            </ul> 
+        <section class="clients">
+            <div class="container">
+                <h2 class="clients-heading">Постоянные клиенты</h2>
+                <ul class="clients__center">
+                    <li class="clients__wrap">
+                        <a href="#" class="clients__icon">
+                            <svg class="clients__icon-marg" width="45" height="49">
+                                <use href="./images/symbol-defs.svg#logo_1"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="clients__wrap">
+                        <a href="#" class="clients__icon">
+                            <svg class="clients__icon-marg" width="40" height="52">
+                                <use href="./images/symbol-defs.svg#logo_2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__wrap">
+                        <a href="#" class="clients__icon">
+                            <svg class="clients__icon-marg" width="41" height="43">
+                                <use href="./images/symbol-defs.svg#logo_3"></use>
+                            </svg> 
+                        </a> 
+                    </li>
+                    <li class="clients__wrap">
+                        <a href="#" class="clients__icon">
+                            <svg class="clients__icon-marg" width="80" height="42">
+                                <use href="./images/symbol-defs.svg#logo_4"></use>
+                            </svg> 
+                        </a>  
+                    </li>
+                    <li class="clients__wrap">
+                        <a href="#" class="clients__icon">
+                            <svg class="clients__icon-marg" width="59" height="47">
+                                <use href="./images/symbol-defs.svg#logo_5"></use>
+                            </svg>
+                        </a>   
+                    </li>
+                    <li class="clients__wrap">
+                        <a href="#" class="clients__icon">
+                            <svg class="clients__icon-marg" width="89" height="46">
+                                <use href="./images/symbol-defs.svg#logo_6"></use>
+                            </svg>
+                        </a> 
+                    </li>
+                </ul> 
+            </div>
         </section>
     </main>
     <!--Footer-->
     <footer class="footer">
-        <div class="footer__center">
+        <div class="footer__center container">
             <div class="footer__two">
                 <div class="footer__nav">
                     <!--<h2>Contacts</h2>--> 

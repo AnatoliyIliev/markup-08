@@ -4,16 +4,9 @@
 
 .portholio {
   margin-top: 25px;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .portholio-heading {
@@ -49,7 +42,7 @@
 .portholio-foto {
   margin-bottom: 30px;
   background-color: $accent-white;
-  width: calc((100% - 2 * 15px) /);
+  width: calc((100% - 2 * 15px) / 1);
   margin: 15px;
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
@@ -64,11 +57,11 @@
 .portholio-block {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-  width: 100%;
+  // width: 100%;
 
-  @media screen and (min-width: 1200px) {
-    width: 370px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 370px;
+  // }
 }
 
 .how {
