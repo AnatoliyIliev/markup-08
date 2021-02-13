@@ -1,4 +1,8 @@
 /*--Header---------------------------------------*/
+.page__header .main-nav {
+  position: relative;
+}
+
 .logo__colour {
   color: #000000;
 }
@@ -24,7 +28,9 @@
 
 .site-nav,
 .auth-nav {
-  display: none;
+  @media screen and (max-width: 767px) {
+  }
+
   @media screen and (min-width: 768px) {
     display: block;
   }
@@ -39,7 +45,6 @@
 }
 
 .site-nav {
-  display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     width: 294px;
@@ -51,9 +56,14 @@
 .page__header-space {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   @media screen and (min-width: 768px) {
     justify-content: space-between;
   }
+}
+
+.page__header-space {
+  display: block;
 }
 
 .nav-mailo {
@@ -68,8 +78,22 @@
   color: $accent-color;
 }
 
-.item {
-  position: relative;
+.site-nav .item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
+
+.auth-nav .item {
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
+}
+
+.page__header-address {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .current::after {
@@ -81,15 +105,22 @@
   background-color: $accent-color;
   border-radius: 2px;
   transition: color $cubic-bezier;
+
+  @media screen and (max-width: 767px) {
+    left: 0;
+    top: 30px;
+  }
+
   @media screen and (min-width: 768px) {
-    top: 45px;
+    top: 42px;
   }
   @media screen and (min-width: 1200px) {
-    top: 47px;
+    top: 44px;
   }
 }
 
 .page__header-nav {
+  position: relative;
   font-style: $font-style;
   font-weight: 500;
   font-size: 14px;
@@ -97,6 +128,10 @@
   letter-spacing: 0.02em;
   color: $primeri-text-color;
   transition: color $cubic-bezier;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
   @media screen and (min-width: 768px) {
     font-size: 12px;
     line-height: 1.17;
@@ -119,13 +154,4 @@
   @media screen and (min-width: 768px) {
     margin-right: 8px;
   }
-}
-
-.menu-button {
-  display: inline-flex;
-  display: none;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background-color: transparent;
 }

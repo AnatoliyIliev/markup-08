@@ -14,36 +14,45 @@
 </head>
 <body>
     <header class="page__header">
-        <div  class="main-nav container">   
+        <nav class="main-nav container">
             <a href="./" class="page__header-logo">Web<span class="logo__colour">Studio</span></a>
-            <nav class="page__header-space">                
-                <ul class="site-nav">
-                    <li class="item"><a href="./index.html" class="page__header-nav">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="page__header-nav current">Портфолио</a></li>
-                    <li class="item"><a href="" class="page__header-nav">Контакты</a></li>
-                </ul>
-            </nav>
-            <address class="page__header-address">
-                <ul class="auth-nav">                 
-                    <li class="item">
-                        <a href="mailto:info@devstudio.com" class="page__header-nav nav-mailo">
-                            <svg class="icon-mail" width="16" height="12">
-                                <use href="./images/symbol-defs.svg#mail"></use>
-                            </svg>                            
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="tel:+380961111111" class="page__header-nav nav-tel">
-                            <svg class="icon-tel"  width="10" height="16">
-                                <use href="./images/symbol-defs.svg#smartphone"></use>
-                            </svg>                            
-                            +38 096 111 11 11
-                        </a>
-                    </li>                    
-                </ul>                
-            </address>
-        </div>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg width='40' height='40' aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href='./images/symbol-defs.svg#icon-menu_40px'></use>
+                    <use class="icon-close" href='./images/symbol-defs.svg#icon-close_40px'></use>
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+                <div class="page__header-space">
+                    <ul class="site-nav">
+                        <li class="item"><a href="./index.html" class="page__header-nav">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="page__header-nav current">Портфолио</a></li>
+                        <li class="item"><a href="" class="page__header-nav">Контакты</a></li>
+                    </ul>
+                </div>
+                <address class="page__header-address">
+                    <ul class="auth-nav">
+                        <li class="item">
+                            <a href="mailto:info@devstudio.com" class="page__header-nav nav-mailo">
+                                <svg class="icon-mail" width="16" height="12">
+                                    <use href="./images/symbol-defs.svg#mail"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="tel:+380961111111" class="page__header-nav nav-tel">
+                                <svg class="icon-tel" width="10" height="16">
+                                    <use href="./images/symbol-defs.svg#smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+    
+        </nav>
     </header>
     <main>
         <!--<h1>Наши работы</h1>-->
@@ -65,20 +74,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/techno@1x-354.webp 354w,
-                                        ./images/techno@1x-354.webp 370w,
+                                        ./images/techno@1x-370.webp 370w,
                                         ./images/techno@1x-450.webp 450w,  
                                         ./images/techno@2x-354.webp 708w,
-                                        ./images/techno@2x-354.webp 740w,                                  
+                                        ./images/techno@2x-370.webp 740w,                                  
                                         ./images/techno@2x-450.webp 900w" 
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset="
                                         ./images/techno@1x-354.jpg 354w,
-                                        ./images/techno@1x-354.jpg 370w,
+                                        ./images/techno@1x-370.jpg 370w,
                                         ./images/techno@1x-450.jpg 450w,  
                                         ./images/techno@2x-354.jpg 708w,
-                                        ./images/techno@2x-354.jpg 740w,                                  
+                                        ./images/techno@2x-370.jpg 740w,                                  
                                         ./images/techno@2x-450.jpg 900w"                          
                                         src="./images/techno@1x-354.jpg" 
                                         alt="Технокряк"   
@@ -106,20 +115,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/basket@1x-354.webp 354w,
-                                        ./images/basket@1x-354.webp 370w,
+                                        ./images/basket@1x-370.webp 370w,
                                         ./images/basket@1x-450.webp 450w,  
                                         ./images/basket@2x-354.webp 708w,
-                                        ./images/basket@2x-354.webp 740w,                                  
+                                        ./images/basket@2x-370.webp 740w,                                  
                                         ./images/basket@2x-450.webp 900w"                                         
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset="  
                                         ./images/basket@1x-354.jpg 354w,
-                                        ./images/basket@1x-354.jpg 370w,
+                                        ./images/basket@1x-370.jpg 370w,
                                         ./images/basket@1x-450.jpg 450w,  
                                         ./images/basket@2x-354.jpg 708w,
-                                        ./images/basket@2x-354.jpg 740w,                                  
+                                        ./images/basket@2x-370.jpg 740w,                                  
                                         ./images/basket@2x-450.jpg 900w"                                        
                                         src="./images/basket@1x-354.jpg" 
                                         alt="Постер New Orlean vs Golden Star"   
@@ -147,20 +156,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/shark@1x-354.webp 354w,
-                                        ./images/shark@1x-354.webp 370w,
+                                        ./images/shark@1x-370.webp 370w,
                                         ./images/shark@1x-450.webp 450w,  
                                         ./images/shark@2x-354.webp 708w,
-                                        ./images/shark@2x-354.webp 740w,                                  
+                                        ./images/shark@2x-370.webp 740w,                                  
                                         ./images/shark@2x-450.webp 900w"                                        
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset=" 
                                         ./images/shark@1x-354.jpg 354w,
-                                        ./images/shark@1x-354.jpg 370w,
+                                        ./images/shark@1x-370.jpg 370w,
                                         ./images/shark@1x-450.jpg 450w,  
                                         ./images/shark@2x-354.jpg 708w,
-                                        ./images/shark@2x-354.jpg 740w,                                  
+                                        ./images/shark@2x-370.jpg 740w,                                  
                                         ./images/shark@2x-450.jpg 900w" 
                                         src="./images/shark@1x-354.jpg" 
                                         alt="Ресторан Seafood"   
@@ -188,20 +197,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/prime@1x-354.webp 354w,
-                                        ./images/prime@1x-354.webp 370w,
+                                        ./images/prime@1x-370.webp 370w,
                                         ./images/prime@1x-450.webp 450w,  
                                         ./images/prime@2x-354.webp 708w,
-                                        ./images/prime@2x-354.webp 740w,                                  
+                                        ./images/prime@2x-370.webp 740w,                                  
                                         ./images/prime@2x-450.webp 900w" 
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset=" 
                                         ./images/prime@1x-354.jpg 354w,
-                                        ./images/prime@1x-354.jpg 370w,
+                                        ./images/prime@1x-370.jpg 370w,
                                         ./images/prime@1x-450.jpg 450w,  
                                         ./images/prime@2x-354.jpg 708w,
-                                        ./images/prime@2x-354.jpg 740w,                                  
+                                        ./images/prime@2x-370.jpg 740w,                                  
                                         ./images/prime@2x-450.jpg 900w"                          
                                         src="./images/prime@1x-354.jpg" 
                                         alt="Проект Prime"   
@@ -229,20 +238,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/boxes@1x-354.webp 354w,
-                                        ./images/boxes@1x-354.webp 370w,
+                                        ./images/boxes@1x-370.webp 370w,
                                         ./images/boxes@1x-450.webp 450w,  
                                         ./images/boxes@2x-354.webp 708w,
-                                        ./images/boxes@2x-354.webp 740w,                                  
+                                        ./images/boxes@2x-370.webp 740w,                                  
                                         ./images/boxes@2x-450.webp 900w" 
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset="  
                                         ./images/boxes@1x-354.jpg 354w,
-                                        ./images/boxes@1x-354.jpg 370w,
+                                        ./images/boxes@1x-370.jpg 370w,
                                         ./images/boxes@1x-450.jpg 450w,  
                                         ./images/boxes@2x-354.jpg 708w,
-                                        ./images/boxes@2x-354.jpg 740w,                                  
+                                        ./images/boxes@2x-370.jpg 740w,                                  
                                         ./images/boxes@2x-450.jpg 900w"                          
                                         src="./images/boxes@1x-354.jpg" 
                                         alt="Проект Boxes"   
@@ -270,20 +279,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/borders@1x-354.webp 354w,
-                                        ./images/borders@1x-354.webp 370w,
+                                        ./images/borders@1x-370.webp 370w,
                                         ./images/borders@1x-450.webp 450w,  
                                         ./images/borders@2x-354.webp 708w,
-                                        ./images/borders@2x-354.webp 740w,                                  
+                                        ./images/borders@2x-370.webp 740w,                                  
                                         ./images/borders@2x-450.webp 900w" 
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset=" 
                                         ./images/borders@1x-354.jpg 354w,
-                                        ./images/borders@1x-354.jpg 370w,
+                                        ./images/borders@1x-370.jpg 370w,
                                         ./images/borders@1x-450.jpg 450w,  
                                         ./images/borders@2x-354.jpg 708w,
-                                        ./images/borders@2x-354.jpg 740w,                                  
+                                        ./images/borders@2x-370.jpg 740w,                                  
                                         ./images/borders@2x-450.jpg 900w"                          
                                         src="./images/borders@1x-354.jpg" 
                                         alt="Inspiration has no Borders"   
@@ -311,20 +320,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/limited@1x-354.webp 354w,
-                                        ./images/limited@1x-354.webp 370w,
+                                        ./images/limited@1x-370.webp 370w,
                                         ./images/limited@1x-450.webp 450w,  
                                         ./images/limited@2x-354.webp 708w,
-                                        ./images/limited@2x-354.webp 740w,                                  
+                                        ./images/limited@2x-370.webp 740w,                                  
                                         ./images/limited@2x-450.webp 900w" 
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset=" 
                                         ./images/limited@1x-354.jpg 354w,
-                                        ./images/limited@1x-354.jpg 370w,
+                                        ./images/limited@1x-370.jpg 370w,
                                         ./images/limited@1x-450.jpg 450w,  
                                         ./images/limited@2x-354.jpg 708w,
-                                        ./images/limited@2x-354.jpg 740w,                                  
+                                        ./images/limited@2x-370.jpg 740w,                                  
                                         ./images/limited@2x-450.jpg 900w"                          
                                         src="./images/limited@1x-354.jpg" 
                                         alt="Издание Limited Edition"   
@@ -352,20 +361,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/lab@1x-354.webp 354w,
-                                        ./images/lab@1x-354.webp 370w,
+                                        ./images/lab@1x-370.webp 370w,
                                         ./images/lab@1x-450.webp 450w,  
                                         ./images/lab@2x-354.webp 708w,
-                                        ./images/lab@2x-354.webp 740w,                                  
+                                        ./images/lab@2x-370.webp 740w,                                  
                                         ./images/lab@2x-450.webp 900w" 
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset="  
                                         ./images/lab@1x-354.jpg 354w,
-                                        ./images/lab@1x-354.jpg 370w,
+                                        ./images/lab@1x-370.jpg 370w,
                                         ./images/lab@1x-450.jpg 450w,  
                                         ./images/lab@2x-354.jpg 708w,
-                                        ./images/lab@2x-354.jpg 740w,                                  
+                                        ./images/lab@2x-370.jpg 740w,                                  
                                         ./images/lab@2x-450.jpg 900w"                          
                                         src="./images/lab@1x-354.jpg" 
                                         alt="Проект LAB"   
@@ -393,20 +402,20 @@
                                 <picture>
                                     <source srcset="
                                         ./images/business@1x-354.webp 354w,
-                                        ./images/business@1x-354.webp 370w,
+                                        ./images/business@1x-370.webp 370w,
                                         ./images/business@1x-450.webp 450w,  
                                         ./images/business@2x-354.webp 708w,
-                                        ./images/business@2x-354.webp 740w,                                  
+                                        ./images/business@2x-370.webp 740w,                                  
                                         ./images/business@2x-450.webp 900w"
                                         type="image/webp"
                                     />
                                     <img 
                                         srcset="   
                                         ./images/business@1x-354.jpg 354w,
-                                        ./images/business@1x-354.jpg 370w,
+                                        ./images/business@1x-370.jpg 370w,
                                         ./images/business@1x-450.jpg 450w,  
                                         ./images/business@2x-354.jpg 708w,
-                                        ./images/business@2x-354.jpg 740w,                                  
+                                        ./images/business@2x-370.jpg 740w,                                  
                                         ./images/business@2x-450.jpg 900w"                         
                                         src="./images/business@1x-354.jpg" 
                                         alt="Growing Business"   
@@ -489,5 +498,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobmenu.js"></script>
 </body>
 </html>

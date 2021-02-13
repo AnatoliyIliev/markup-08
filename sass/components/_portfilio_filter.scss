@@ -58,7 +58,6 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   // width: 100%;
-
   // @media screen and (min-width: 1200px) {
   //   width: 370px;
   // }
@@ -76,24 +75,24 @@
 }
 
 .overlay-lid {
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
   overflow: hidden;
 }
 
 .overlay {
-  display: flex;
+  position: absolute;
+  // display: flex;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $accent-white;
   margin: 0;
   padding: 77px 24px;
-  position: absolute;
 
   width: 100%;
-  height: 100%;
+  // height: 100%;
 
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
